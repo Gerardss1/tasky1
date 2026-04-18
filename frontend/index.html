@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tasky App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>📋 Tasky</h1>
+
+  <!-- LOGIN -->
+  <div id="auth">
+    <input type="email" id="email" placeholder="Correo">
+    <input type="password" id="password" placeholder="Contraseña">
+    <button onclick="login()">Login</button>
+    <button onclick="register()">Registro</button>
+  </div>
+
+  <!-- TASKS -->
+  <div id="app" style="display:none;">
+    <input type="text" id="taskInput" placeholder="Nueva tarea">
+    <button onclick="createTask()">Agregar</button>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
